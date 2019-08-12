@@ -1,0 +1,77 @@
+﻿@model ContactUs.Models.contact
+
+@{
+    ViewBag.Title = "Contact Us";
+}
+
+
+<header>
+    <h1>@ViewBag.Title</h1>
+    <h4>@ViewBag.Message</h4>
+</header>
+
+<div class="contact">
+    <form method="post">
+        <input name="firstName" type="text" placeholder="First Name" required class="text" />
+        <input name="lastName" type="text" placeholder="Last Name" required class="text" />
+        <input name="email" type="email" placeholder="Email Address" required class="text" />
+        <input name="telephone" type="tel" placeholder="Phone Number" required class="text" />
+        <label class="groupLabel" for="timeToCall">Best Time to Call:</label>
+        <div class="hour">
+            <label class="checkbox"><input name="timeToCall" value="9AM" type="checkbox" /> 9AM</label>
+            <label class="checkbox"><input name="timeToCall" value="9:15AM" type="checkbox" /> 9:15AM</label>
+            <label class="checkbox"><input name="timeToCall" value="9:30AM" type="checkbox" /> 9:30AM</label>
+            <label class="checkbox"><input name="timeToCall" value="9:45AM" type="checkbox" /> 9:45AM</label>
+        </div>
+        <div class="hour">
+            <label class="checkbox"><input name="timeToCall" value="10AM" type="checkbox" /> 10AM</label>
+            <label class="checkbox"><input name="timeToCall" value="10:15AM" type="checkbox" /> 10:15AM</label>
+            <label class="checkbox"><input name="timeToCall" value="10:30AM" type="checkbox" /> 10:30AM</label>
+            <label class="checkbox"><input name="timeToCall" value="10:45AM" type="checkbox" /> 10:45AM</label>
+        </div>
+        <div class="hour">
+            <label class="checkbox"><input name="timeToCall" value="11AM" type="checkbox" /> 11AM</label>
+            <label class="checkbox"><input name="timeToCall" value="11:15AM" type="checkbox" /> 11:15AM</label>
+            <label class="checkbox"><input name="timeToCall" value="11:30AM" type="checkbox" /> 11:30AM</label>
+            <label class="checkbox"><input name="timeToCall" value="11:45AM" type="checkbox" /> 11:45AM</label>
+        </div>
+        <div class="hour">
+            <label class="checkbox"><input name="timeToCall" value="12PM" type="checkbox" /> 12PM</label>
+            <label class="checkbox"><input name="timeToCall" value="12:15PM" type="checkbox" /> 12:15PM</label>
+            <label class="checkbox"><input name="timeToCall" value="12:30PM" type="checkbox" /> 12:30PM</label>
+            <label class="checkbox"><input name="timeToCall" value="12:45PM" type="checkbox" /> 12:45PM</label>
+        </div>
+        <div class="hour">
+            <label class="checkbox"><input name="timeToCall" value="1PM" type="checkbox" /> 1PM</label>
+            <label class="checkbox"><input name="timeToCall" value="1:15PM" type="checkbox" /> 1:15PM</label>
+            <label class="checkbox"><input name="timeToCall" value="1:30PM" type="checkbox" /> 1:30PM</label>
+            <label class="checkbox"><input name="timeToCall" value="1:45PM" type="checkbox" /> 1:45PM</label>
+        </div>
+        <div class="hour">
+            <label class="checkbox"><input name="timeToCall" value="2PM" type="checkbox" /> 2PM</label>
+            <label class="checkbox"><input name="timeToCall" value="2:15PM" type="checkbox" /> 2:15PM</label>
+            <label class="checkbox"><input name="timeToCall" value="2:30PM" type="checkbox" /> 2:30PM</label>
+            <label class="checkbox"><input name="timeToCall" value="2:45PM" type="checkbox" /> 2:45PM</label>
+        </div>
+        <div class="hour">
+            <label class="checkbox"><input name="timeToCall" value="3PM" type="checkbox" /> 3PM</label>
+            <label class="checkbox"><input name="timeToCall" value="3:15PM" type="checkbox" /> 3:15PM</label>
+            <label class="checkbox"><input name="timeToCall" value="3:30PM" type="checkbox" /> 3:30PM</label>
+            <label class="checkbox"><input name="timeToCall" value="3:45PM" type="checkbox" /> 3:45PM</label>
+        </div>
+        <div class="hour">
+            <label class="checkbox"><input name="timeToCall" value="4PM" type="checkbox" /> 4PM</label>
+            <label class="checkbox"><input name="timeToCall" value="4:15PM" type="checkbox" /> 4:15PM</label>
+            <label class="checkbox"><input name="timeToCall" value="4:30PM" type="checkbox" /> 4:30PM</label>
+            <label class="checkbox"><input name="timeToCall" value="4:45PM" type="checkbox" /> 4:45PM</label>
+        </div>
+        <div class="hour">
+            <label class="checkbox"><input name="timeToCall" value="5PM" type="checkbox" /> 5PM</label>
+            <label class="checkbox"><input name="timeToCall" value="5:15PM" type="checkbox" /> 5:15PM</label>
+            <label class="checkbox"><input name="timeToCall" value="5:30PM" type="checkbox" /> 5:30PM</label>
+            <label class="checkbox"><input name="timeToCall" value="5:45PM" type="checkbox" /> 5:45PM</label>
+        </div>
+        <div class="g-reCAPTCHA" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+        <input type="submit" class="submit" />
+    </form>
+</div>
