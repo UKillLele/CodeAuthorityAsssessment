@@ -1,4 +1,4 @@
-﻿@model ContactUs.Models.contact
+﻿@model ContactUs.Models.Contact
 
 @{
     ViewBag.Title = "Delete";
@@ -8,47 +8,39 @@
 
 <h3>Are you sure you want to delete this?</h3>
 <div>
-    <h4>contact</h4>
+    <h4>Contact</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.firstName)
+            @Html.DisplayNameFor(model => model.FirstName)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.firstName)
+            @Html.DisplayFor(model => model.FirstName)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.lastName)
+            @Html.DisplayNameFor(model => model.LastName)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.lastName)
+            @Html.DisplayFor(model => model.LastName)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.email)
+            @Html.DisplayNameFor(model => model.Email)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.email)
+            @Html.DisplayFor(model => model.Email)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.phone)
+            @Html.DisplayNameFor(model => model.Phone)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.phone)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.timeToCall)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.timeToCall)
+            @Html.DisplayFor(model => model.Phone)
         </dd>
 
     </dl>
